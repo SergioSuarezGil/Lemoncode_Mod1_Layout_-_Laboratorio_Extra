@@ -1,0 +1,22 @@
+{
+  "version": "1.0.0",
+  "description": "Módulo 1 - Layout - Laboratorio Extra",
+  "author": "Sergio Suárez Gil",
+  "license": "MIT",
+  "keywords": [
+    "sass",
+    "scss",
+    "flexbox",
+    "grid",
+    "bem",
+    "layout"
+  ],
+  "private": false,
+  "scripts": {
+    "build": "sass scss/styles.scss css/styles.css",
+    "watch": "sass --watch scss/styles.scss css/styles.css"
+  },
+  "devDependencies": {
+    "sass": "^1.93.2"
+  }
+}

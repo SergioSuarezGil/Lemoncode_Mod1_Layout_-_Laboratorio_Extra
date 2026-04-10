@@ -1,0 +1,79 @@
+@use './variables' as *;
+
+@media (max-width: $breakpoint-tablet) {
+  .member-card {
+    flex: 0 1 48%;
+  }
+}
+
+@media (max-width: $breakpoint-mobile) {
+  .layout-header {
+    &__toolbar {
+      display: none;
+    }
+
+    &__title {
+      position: sticky;
+      top: 0;
+      z-index: 30;
+    }
+  }
+
+  .app-layout {
+    display: block;
+  }
+
+  .sidebar {
+    width: 100%;
+    position: sticky;
+    top: $layout-header-mobile-height;
+    height: auto;
+    overflow-y: visible;
+    z-index: 25;
+    border-bottom: 0.1rem solid $color-accent;
+
+    &__title {
+      display: none;
+    }
+
+    &__list {
+      display: flex;
+      justify-content: space-around;
+      gap: 0.5rem;
+      padding: 1rem;
+    }
+
+    &__item {
+      flex: 1;
+      text-align: center;
+      border-left: none;
+      border-bottom: 0.2rem solid transparent;
+      border-radius: 0.5rem;
+      padding: 1rem;
+      font-size: 0.9em;
+
+      &:hover {
+        border-left-color: transparent;
+        border-bottom-color: $color-accent;
+      }
+    }
+  }
+
+  .content {
+    margin-left: 0;
+  }
+
+  .app-footer {
+    padding-left: 2rem;
+  }
+
+  .members-grid {
+    padding: 1rem;
+    gap: 1rem;
+  }
+
+  .member-card {
+    flex: 0 1 100%;
+    min-width: 0;
+  }
+}

@@ -1,0 +1,52 @@
+@use './variables' as *;
+
+.layout-header {
+  position: sticky;
+  top: 0;
+  z-index: 20;
+  box-shadow: 0 0.5rem 1rem $shadow-soft;
+
+  &__toolbar {
+    background-color: $color-bg-page;
+    color: $color-text-soft;
+    padding: 0.7rem 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  &__search {
+    width: 20rem;
+    max-width: 100%;
+    border: 0.1rem solid $color-border-mid;
+    border-radius: $radius-sm;
+    padding:  0.2rem;
+    font-size: 1em;
+    outline: none;
+    background-color: $color-bg-surface;
+    color: $color-text-olive;
+
+    &::placeholder {
+      color: $color-text-muted;
+    }
+
+    &:focus {
+      border-color: $color-accent;
+      box-shadow: 0 0 0 0.1rem $shadow-focus;
+    }
+  }
+
+  &__user {
+    font-weight: 500;
+    color: $color-text-soft;
+  }
+
+  &__title {
+    background-color: $color-primary;
+    color: #ffffff;
+    font-size: 1.5em;
+    font-weight: 600;
+    padding: 1rem;
+  }
+}
