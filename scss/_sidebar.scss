@@ -5,12 +5,6 @@
   background-color: $color-primary-dark;
   color: $color-text-on-dark;
   flex-shrink: 0;
-  position: fixed;
-  top: $layout-header-desktop-height;
-  left: 0;
-  height: calc(100vh - #{$layout-header-desktop-height});
-  overflow-y: auto;
-  z-index: 25;
 
   &__menu {
     padding: 0;
